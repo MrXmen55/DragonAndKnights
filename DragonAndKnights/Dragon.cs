@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DragonAndKnights
 {
-    class Dragon
+    public class Dragon
     {
 
         
@@ -17,10 +17,10 @@ namespace DragonAndKnights
         public int Health;
  
 
-        public Dragon(string name)
+        public Dragon(string name="ALDUIN")
         {
             Random random = new Random();
-            Health = 1000;
+            Health = 30;
             MinDamage = random.Next(0, 10);
             MaxDamage = random.Next(10, 25);
             IsDead = false;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace DragonAndKnights
 {
@@ -11,7 +12,7 @@ namespace DragonAndKnights
         public int Health;
 
 
-        public Knight(string name = "Sir Galahad ")
+        public Knight(string name = "King Artur")
         {
             Random random = new Random();
             Health = 10;
@@ -22,7 +23,7 @@ namespace DragonAndKnights
             Console.WriteLine("I'm " + Name + " and I have " + Health + " points of health!");
         }
 
-        public void MakeDamage(Knight targetDragon)
+        public void MakeDamage(Dragon targetDragon)
         {
             Random random = new Random();
             int damagePoints = random.Next(MinDamage, MaxDamage);
